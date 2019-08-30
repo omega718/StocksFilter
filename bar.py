@@ -32,11 +32,9 @@ def showBar(name,total,cumN):
     #顯示畫布
     screen.blit(desk,(0,0))
     
-    clock=pygame.time.Clock()
-
     pygame.display.update()
     time.sleep(0.05)
-    #每秒執行30次
+    #每秒執行5次
+    clock=pygame.time.Clock()
     clock.tick(5)
     pygame.display.quit
-#showBar("test",sc,len(total))
