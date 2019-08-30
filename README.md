@@ -1,0 +1,11 @@
+2019/08/30
+一、用python擷取網頁上股票的歷年財務面資訊，篩選符合以下三個條件之股票，並匯出xlsx檔
+(1)自由現金流量5年皆大於0;
+(2)現金股利近5年平均大於0;
+(3)ROE近5年平均大於10%;
+網頁來源:
+https://goodinfo.tw/StockInfo/StockList.asp
+https://www.cmoney.tw/finance/f00027.aspx?s=4542，擷取歷年股利
+https://www.cmoney.tw/finance/f00042.aspx?s=4542&o=4，擷取歷年現金流量
+https://www.cmoney.tw/finance/f00043.aspx?s=4542&o=3，擷取歷年稅後股東權益報酬率
+二、用pygame模組自訂一showBar方法，可顯示篩選股票之動態進度條與百分比文字
